@@ -44,7 +44,10 @@ Collecting IOCs:  <br/>
     For windows these are very easy to collect, just right click on the file, go to Properties, and copy the filename and file size. For my case I have used 2 malware samples to collect these information. <br />
     <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/66ecec0c-03a4-4ef4-9eb7-730e657f328a"/>
     <br />
- - <b> I used the password to unzip the file and used "ls –a" commad to find all files in the current directory.</b>
+ - <b>File Hashes:
+    I have created MD5, SHA1 and SHA256 checksums, which can be used as a file hash indicator to search for the exact same file on a system. To retrieve file hashes in Windows, I opened the windows PowerShell terminal and moved into     the same location as the file I  wanted to retrieve the hash for, and used the command "Get-FileHash <filename>".By default the algorithm creates SHA256 checksum. For generating MD5 and SHA1, I used "-algorithm" flag to specify      MD5 or SHA1. <br />
+    <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/2b7574cb-c195-40f4-b4d8-4f9f3c777604"/>
+    <br />
  - <b> A new file named employeedump is detected</b>
  - <b> To determine what type of file is the new one, I used "file employeedump" command and it shows the file as text.</b>
  - <b> I renamed the file to a text file using the command "mv employeedump employeedump.txt"</b>
