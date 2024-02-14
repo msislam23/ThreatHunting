@@ -189,6 +189,24 @@ Click on the IOC Report,then click on files at the right to view the results.
 
 <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/51fde45d-ab40-4cdd-b967-137148b47615"/>
 <br />
+
+<br />
+Redline has successfully found all of our files based on the provided IOCs. We are able to see the file path, size, MD5 hash, user, and various important file dates. 
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/141513a2-c063-4367-97b8-9d80dc89e8eb"/>
+<br />
+
+<br />
+For details, click on any row.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/10542403-ccbb-4764-9f17-8ab762b6f42a"/>
+<br />
+
+<br />
+And it will show the details for which parameter/s this one is detected.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/c393ef34-1425-4863-9667-11582cb67596"/>
+<br />
 </p>
 
 <!--
