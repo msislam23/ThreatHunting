@@ -85,16 +85,44 @@ Properly fill up the fields such as name, Author, Description etc.<br/>
 <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/6d80cb2e-b311-4486-8a65-a416d2684cf5"/>
 <br />
 <br />
-Evidence 3 of 4: <br/>
-This third evidence was hidden inside a file by changing the file extension inside the directory "/J Harrison Disk Image 10.09.2019/Weekly Meeting Notes/Week 10". I used "file" command in kali Linux to detect the real file type and used "mv" command to change it back to its real file extension to find the evidence. This file was showing as an ".xml" but it was actually an image file. I converted it back to ".jpeg" format to find the evidence. 
-<img src="https://github.com/msislam23/DigitalForensics/assets/157939065/b44ab694-f1c0-40a0-b435-071789f04b71"/>
-<img src="https://github.com/msislam23/DigitalForensics/assets/157939065/e537e479-fc03-4fba-879b-eaca5c4a45a8"/>
+Right-click anywhere in the bottom pane and go to Add Item > FileItem and select all relevant items such as MD5, SHA1, SHA256, File size, Name, Strings as IOC.
+
+ 
+ SHA-1 Hash: Add Item > FileItem > Sha1sum
+ 
+ File Name: Add Item > FileItem > File Name
+ 
+ File Size: Add Item > FileItem > File Size
+
+This creates a new entry in our OR tree.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/587ce830-cf23-4da4-b164-cb81fe50ba30"/>
+
 <br />
 <br />
-And the evidence is: <br/>
-<img src="https://github.com/msislam23/DigitalForensics/assets/157939065/e229d5a1-15d1-49ba-a01a-869ac2f5ab25"/>
+After all of the entries, the IOC file is ready, and it looks like as below. I saved the file by clicking save button at the bottom right corner. This way I created both IOC files.
+
+IOC file 1:
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/6fac6762-0cc5-4320-88f3-00e4569ea283"/>
+
+IOC file 2:
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/63421d0e-e3fc-4dc7-998a-c286871df6cd"/>
 <br />
-This evidence represents office locations<br/>
+
+<p align="center">
+<br />
+ Hunting for malware based on IOCs created by Redline: <br/>
+ 
+ In this part I will audit a system using redline using our IOC files to identify any presence of any of them in the system.
+
+ After installation of redline and before opening the software, I created a new folder for my IOC collector at-C:\Users\sha\Desktop\THREAT HUNT
+
+ Then open Redline, and select Create an IOC Search Collector
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/35b42a8b-0b20-4c30-8013-790b6ea7a43e"/>
+
 <br />
 <br />
 Evidence 4 of 4:<br/>
