@@ -24,8 +24,16 @@ The aim of this project is to hunt for any presence of the malware in a system. 
 
 <p align="center">
 <br/>
-Please check below the image of the disk need to be checked  <br/>
-<img src="https://github.com/msislam23/DigitalForensics/assets/157939065/da7d86a7-e4c0-48e8-92a0-4957490a35c7" height="80%" width="80%"/>
+This whole project is completed in three steps:
+
+ At first step: I have collected all different types of IOCs such as  MD5, SHA1, SHA256 Hashes; File Size, File Name, Strings from real malwares.
+
+ At second step: I generated IOC files using Mandiant IOC editor using these IOCs
+
+ At the third stage, I have analyzed my Target disk image based on these two IOC files using Redline.
+
+Please check below the image of the real malware files:  <br/>
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/30bcdeff-44eb-4119-880d-0302ef09ec82"/>
 <br />
 <br />
 Evidence 1 of 4:  <br/>
