@@ -60,29 +60,29 @@ Collecting IOCs:  <br/>
     The entire IOC summary is below: 
     <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/ac42c058-c556-4f40-85b9-b852e5e5dc9b"/>
     <br />
- - <b> To determine what type of file is the new one, I used "file employeedump" command and it shows the file as text.</b>
- - <b> I renamed the file to a text file using the command "mv employeedump employeedump.txt"</b>
- - <b> Then I used "strings employeedump.txt" command to read the content of the file and which shows our first evidence {Part 1 of 4}</b>
- <br/> This was all employee information.<br />
-
-<img src="https://github.com/msislam23/DigitalForensics/assets/157939065/367c92e3-7c80-4459-b923-908918fd93df"/>
-<br />
-
+ 
 <p align="center">
 <br />
-Evidence 2 of 4: <br/>
-For evidence two, there are two steps. At first I investigated the saved email folder as per the suggestion in the hint. I have found the clue that the person has hidden the evidence using steganography in a .jpg file and the password to extract that file is “password”. I found this information inside Form1.jpg file inside “Saved Emails” at "/J Harrison Disk Image 10.09.2019/Saved Emails"
-<img src="https://github.com/msislam23/DigitalForensics/assets/157939065/3f529930-7ece-4be9-b8da-2f5575924984"/>
+ Creating IOC files using Mandiant IOC editor: <br/>
+ 
+ For creating IOC files, I created a folder in my desktop location-C:\Users\sha\Desktop\IOCs.
+
+ After opening Mandiant IOCe, select the newly created folder and press ok. The file path is visible at the top of the window.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/0eb4046d-df64-41cd-ba6d-e40438d8ef84"/>
+
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/caa21d62-ca8a-45a6-9d4c-eb7993d632bf"/>
 <br />
 <br />
-At the last part I found the following information:  <br/>
-<img src="https://github.com/msislam23/DigitalForensics/assets/157939065/20668a3d-5c8f-4cbf-8184-dac525b3f2da"/>
+Now to create an IOC file, select File > New > Indicator.<br/>
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/f09c52a7-8038-45f3-b833-9a831d9094ee"/>
 <br />
 <br />
-Then I navigated through the files and folders. Inside image folder at /J Harrison Disk Image 10.09.2019/Images, I found several images. As image files are used to hide other files using steganography. I used the command “steghide --extract -sf filename.jpg” using password “password” for several jpg files to extract hidden file inside. The image laptop.jpg returned a text file named passwords. And after extracting the content of the text file, I found my second piece of evidence {2/4}<br/>
-<br />
-This shows list of employee passwords<br/>
-<img src="https://github.com/msislam23/DigitalForensics/assets/157939065/986c9eec-8603-4e51-b75b-92adf25b7ac9"/>
+Properly fill up the fields such as name, Author, Description etc.<br/>
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/6d80cb2e-b311-4486-8a65-a416d2684cf5"/>
 <br />
 <br />
 Evidence 3 of 4: <br/>
