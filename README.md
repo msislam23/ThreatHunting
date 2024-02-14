@@ -33,6 +33,7 @@ This whole project is completed in three steps:
  At the third stage, I have analyzed my Target disk image based on these two IOC files using Redline.
 
 Please check below the image of the real malware files:  <br/>
+
 <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/30bcdeff-44eb-4119-880d-0302ef09ec82"/>
 <br />
 
@@ -42,13 +43,23 @@ Collecting IOCs:  <br/>
 
  - <b>File name and Size:
     For windows these are very easy to collect, just right click on the file, go to Properties, and copy the filename and file size. For my case I have used 2 malware samples to collect these information. <br />
+    
     <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/66ecec0c-03a4-4ef4-9eb7-730e657f328a"/>
     <br />
  - <b>File Hashes:
     I have created MD5, SHA1 and SHA256 checksums, which can be used as a file hash indicator to search for the exact same file on a system. To retrieve file hashes in Windows, I opened the windows PowerShell terminal and moved into     the same location as the file I  wanted to retrieve the hash for, and used the command "Get-FileHash <filename>".By default the algorithm creates SHA256 checksum. For generating MD5 and SHA1, I used "-algorithm" flag to specify      MD5 or SHA1. <br />
+    
     <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/2b7574cb-c195-40f4-b4d8-4f9f3c777604"/>
     <br />
- - <b> A new file named employeedump is detected</b>
+ - <b>File Strings:
+    I used all strings provided by threat intelligence team. 
+    STRINGS: 390808010001Z0U1, #H3XGROUPWASHERE 
+    <br />
+    <p align="center">
+    <br />
+    The entire IOC summary is below: 
+    <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/ac42c058-c556-4f40-85b9-b852e5e5dc9b"/>
+    <br />
  - <b> To determine what type of file is the new one, I used "file employeedump" command and it shows the file as text.</b>
  - <b> I renamed the file to a text file using the command "mv employeedump employeedump.txt"</b>
  - <b> Then I used "strings employeedump.txt" command to read the content of the file and which shows our first evidence {Part 1 of 4}</b>
