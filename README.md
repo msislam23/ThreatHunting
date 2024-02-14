@@ -167,11 +167,27 @@ To start audit, start CMD as administrator. Navigate to the hunting folder in th
 <br />
 Redline will start audit and create a new directory appear in the Collector folder named “Sessions“, a sub-folder named “AnalysisSession1“, and a file sub-folder called “Audits“.
 
+When the audit has completely finished in the “AnalysisSession1” directory, import AnalysisSession1.mans in Redline, to generate an IOC Report.
+
 <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/ccec43e1-35af-4a61-aba8-d990f2f0ef73"/>
 <br />
 
 <br />
-This is personal information of Colin Andrews
+Now open up redline, under the Analyze Data heading, click on Open Previous Analysis. elect AnalysisSession1.mans file, and it will be loaded into Redline for analysis.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/7c2b3977-91fc-4947-aff3-001062f9c7bf"/>
+<br />
+
+<br />
+In the bottom left corner, from three tabs. Click on IOC Reports, and a report from the hunt will be available. 
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/5e85f64e-caf4-4e9c-be17-0cf0d64cb0fc"/>
+<br />
+
+<br />
+Click on the IOC Report,then click on files at the right to view the results.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/51fde45d-ab40-4cdd-b967-137148b47615"/>
 <br />
 </p>
 
