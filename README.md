@@ -125,11 +125,51 @@ IOC file 2:
 
 <br />
 <br />
-Evidence 4 of 4:<br/>
-This was hidden inside the "/J Harrison Disk Image 10.09.2019/WebDev work/unfinished webpages/templatemo_508_power/css".
-I used "file" and "strings" commands to find the evidence in kali linux.
+Click “Browse” in the top right corner and Select the folder where IOC files are located. Select IOC files in the left-hand window, then click “Next” in the bottom right corner.
 
-<img src="https://github.com/msislam23/DigitalForensics/assets/157939065/a59ee24f-9701-4a85-9ce7-3c992cae3342"/>
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/4bd8b0ef-c5d8-45e9-8fbc-12c6bae1be99"/>
+<br />
+
+<br />
+Then click Edit your script, Under Disk select the boxes that are relevant for this hunt.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/49f73080-1829-45d8-8b3f-c0f2da455800"/>
+<br />
+
+<br />
+To prevent Redline from scanning entire system looking for target files, select the path where Redline will start searching from. In my case I have put my target directory at my desktop and I will show redline only to look for that location. 
+
+This can be done by navigating to disk tab and selecting “show advanced parameter.”
+
+Edit the Path value with the full file path of my target directory and click ok at the bottom right corner. Now Redline won’t spend ages scanning whole system.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/1e5e3e5f-cf1e-4987-ae22-5ea8fdd4de5c"/>
+<br />
+
+<br />
+Now select a location to save IOC Collector as Redline requires a base location to save all of its files and results from the hunt. Click the “Browse” button at the bottom right and select the new folder as the folder I created before for IOC Search Collector. A popup will confirm that the Collector package has been created and saved to the location selected.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/398c90e7-c483-457d-90d2-5aee0a078f89"/>
+<br />
+
+<br />
+After selecting IOC files and IOC collector base, hunting folder should show all the collector’s files as shown below:
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/a7668f53-2088-4f79-8021-4d1cfd38254e"/>
+<br />
+
+<br />
+To start audit, start CMD as administrator. Navigate to the hunting folder in the same location as the collector files and use the command ".\RunRedlineAudit.bat".
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/16861199-600b-4a33-9245-24d7636f01c7"/>
+<br />
+
+<br />
+Redline will start audit and create a new directory appear in the Collector folder named “Sessions“, a sub-folder named “AnalysisSession1“, and a file sub-folder called “Audits“.
+
+<img src="https://github.com/msislam23/ThreatHunting/assets/157939065/ccec43e1-35af-4a61-aba8-d990f2f0ef73"/>
+<br />
+
 <br />
 This is personal information of Colin Andrews
 <br />
