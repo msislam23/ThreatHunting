@@ -3,27 +3,22 @@
 
 <h2>Project Summary</h2>
 
-The target of this challenge is to analyze the content of an image of the user’s hard drive to find any evidence of malicious activity. There are 4 pieces of hidden information where each piece of evidence will contain the string like {1 of 4} or similar. I have been told that the most recent file on the hard-drive was an email file with an attachment in the “Saved Emails” directory. So the starting point should be that directory. For all four evidences, I need to find the following answers:
+The aim of this project is to hunt for any presence of the malware in a system. A disk image was taken. I have to collect Indicators of compromise (IOCs) from two malware samples and to generate two IOC files using Mandiant IOC Editor. Then I have to use these IOC files to audit the disk image using Redline. The project involves real malwares. I was provided with two strings which I need to include in my IOCs: 390808010001Z0U1, #H3XGROUPWASHERE
 
 
- - <b> What is the name of the file where the evidence was found? (filename and extension)</b>
- - <b> What is the name of the directory where this evidence was found?</b>
- - <b> What piece of evidence have you found?</b>
  
 
 <h2>Skills Achieved</h2>
 
-  - <b> Linux CLI navigation</b>
-  - <b> Identifying incorrect file extensions</b>
-  - <b> Identifying hidden files/folders</b>
-  - <b> Steganography</b>
-  - <b> Password cracking</b>
+  - <b> Generating IOC using Mandiant IOC editor</b>
+  - <b> Malware Threat hunt by IOCs using Redline</b>
+
 
 <h2>Tools/software  Used </h2>
 
-- <b>Kali Linux</b> 
-- <b>Challenge disk image (.zip file: J Harrison Disk image 10.09.2019)</b>
-
+- <b> Mandiant IOCe</b>
+- <b> Redline</b>
+- <b> PowerShell</b>
 
 <h2>Project walk-through:</h2>
 
