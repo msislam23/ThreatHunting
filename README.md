@@ -35,13 +35,15 @@ This whole project is completed in three steps:
 Please check below the image of the real malware files:  <br/>
 <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/30bcdeff-44eb-4119-880d-0302ef09ec82"/>
 <br />
+
+<p align="center">
 <br />
-Evidence 1 of 4:  <br/>
-As per the above hints, for any zip file with password needs to be investigated. I used kali Linux CLI to navigate different folders and files of the disk image, I found a password protected zip file named “.a0415ns.zip” at /J Harrison Disk Image 10.09.2019/WebDev work/unfinished webpages/to-do and this file name starts with “.” (as suggested in the hints I should check all files including hidden ones as well). So I decided to investigate this file. 
+Collecting IOCs:  <br/>
 
-
- - <b> First I find out the password using the command: "fcrackzip –D –p /usr/share/wordlist/rockyou.txt –u .a0415ns.zip" </b> <br/> I have used dictionary approach to crack the file using the default rockyou.txt file for finding the password from the list in the text file.<br />
- 
+ - <b>File name and Size:
+    For windows these are very easy to collect, just right click on the file, go to Properties, and copy the filename and file size. For my case I have used 2 malware samples to collect these information. <br />
+    <img src="https://github.com/msislam23/ThreatHunting/assets/157939065/66ecec0c-03a4-4ef4-9eb7-730e657f328a"/>
+    <br />
  - <b> I used the password to unzip the file and used "ls –a" commad to find all files in the current directory.</b>
  - <b> A new file named employeedump is detected</b>
  - <b> To determine what type of file is the new one, I used "file employeedump" command and it shows the file as text.</b>
